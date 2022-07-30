@@ -1,0 +1,128 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(209,238,251, 0.6), rgba(209,238,251, 0.6)),url(./images/pattern-background-desktop.svg);
+    padding: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Red Hat Display', serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 2px rgba(25,21,235,0.2);
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.pix{
+    background-image: url(./images/illustration-hero.svg);
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px;
+    border-radius: 0 0 16px 16px;
+
+}
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding: 16px;
+    font-size: 14px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 12px;
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    padding: auto 0;
+    align-items: center;
+    
+}
+
+img{
+    margin-right: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.detail p{
+    margin: 6px;
+}
+h2{
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin: 0px;
+}
+
+.para{
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.pale{
+    color: var(--Desaturated-blue);
+}
+
+button{
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 4px 2px rgba(25,21,235,0.2);;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover{
+    color:var(--Desaturated-blue);
+}
+
+@media screen and (max-width:370px) {
+    body{
+        background-image: linear-gradient(rgba(209,238,251, 0.8), rgba(209,238,251, 0.8)),url(./images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+    
+}
